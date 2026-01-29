@@ -29,9 +29,9 @@
         </div>
         <div class="intro-right">
             <a href="#sobre" class="nav-button">Sobre</a>
+            <a href="#formacoes" class="nav-button">Formação</a>
             <a href="#experiencia" class="nav-button">Experiência</a>
             <a href="#capacitacao" class="nav-button">Capacitação</a>
-            <a href="#projetos" class="nav-button">Projetos</a>
             <a href="#projetos de extensão" class="nav-button">Projetos de Extensão</a>
             <a href="#contato" class="nav-button">Contato</a>
         </div>
@@ -45,7 +45,22 @@
       </p>
     <div class="scroll-arrow">↓</div></section>
 
-    <!-- Slide 3: Experiência -->
+    <!-- Slide 3: Formação -->
+    <section id="formacoes">
+        <div class="scrollable-content"></div>
+            <h3>Formação</h3>
+            <p><strong>Graduação em Ciência da Computação – em curso</strong></p>
+            <ul>
+                <li>Início em março de 2023. Cursando atualmente o 7º semestre no IESB, Campus Sul, em Brasília, DF. Conclusão prevista para final de 2027</li>
+            </ul>
+            <p><strong>Matérias Relevantes</strong></p>
+            <ul>
+                <li>Algoritmos e Programação de Computadores I, Laboratório Práticas, Banco de Dados I, Sistemas Digitais, Algoritmose Programação de Computadores II, Laboratório Práticas II, Teoria da computação, Arquitetura  e  Organização  de Computadores, Estrutura de Dados, Banco de Dados II, Engenharia de Software, Inteligência Artificial, Programação Orientada a Objetos, Governância de TI e Mapeamento de Processos, Probabilidade e Estatística, Tecnologias Web, Computação Gráfica, Programação para Dispositivos Móveis e Paradigmas de Linguagem de Programação.</li>
+            </ul>
+        <div class="scroll-arrow">↓</div></section>
+
+
+    <!-- Slide 4: Experiência -->
     <section id="experiencia">
         <div class="scrollable-content">
             <h3>Experiência</h3>
@@ -72,7 +87,7 @@
         </div>
     <div class="scroll-arrow">↓</div></section>
 
-    <!-- Slide 4: Capacitação -->
+    <!-- Slide 5: Capacitação -->
     <section id="capacitacao">
         <div class="scrollable-content">
             <h3>Capacitação Complementar</h3>
@@ -139,16 +154,6 @@
         </div>
     <div class="scroll-arrow">↓</div></section>
 
-    <!-- Slide 5: Projetos -->
-    <section id="projetos">
-      <h3>Projetos & Interesses</h3>
-      <ul>
-        <li>Automação e coleta de dados</li>
-        <li>Segurança da informação</li>
-        <li>Soluções backend</li>
-      </ul>
-    <div class="scroll-arrow">↓</div></section>
-
     <!-- Slide 6: Projetos de extensão -->
     <section id="projetos de extensão">
       <h3>Projetos de extensão</h3>
@@ -183,6 +188,7 @@
     <div class="scroll-arrow">↓</div></section>
   </div>
 
+    <div id="backToTopBtn" title="Voltar ao Topo">↑</div>
 <script>
     const themeSwitch = document.getElementById('checkbox');
     const body = document.body;
@@ -247,6 +253,25 @@
             }, 2000); 
         }).catch(err => {
             console.error('Erro ao copiar o email: ', err);
+        });
+    });
+
+    // Back to top button functionality
+    const container = document.querySelector('.container');
+    const backToTopBtn = document.getElementById('backToTopBtn');
+
+    container.addEventListener('scroll', () => {
+        if (container.scrollTop > 200) { // Mostra o botão após rolar 200px
+            backToTopBtn.style.display = 'block';
+        } else {
+            backToTopBtn.style.display = 'none';
+        }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+        container.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Rolagem suave
         });
     });
 </script>
