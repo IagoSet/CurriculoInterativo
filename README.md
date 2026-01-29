@@ -21,11 +21,6 @@ O projeto foi construído utilizando as seguintes tecnologias:
 -   **CSS3:** Para estilização, layout e animações.
 -   **JavaScript (ES6+):** Para a interatividade, como a troca de tema e o botão de scroll.
 
-## 🖼️ Preview
-
-<!-- Você pode substituir o link abaixo por um screenshot do seu site -->
-![Preview do site](https://i.imgur.com/placeholder.png)
-
 ## ✍️ Autor
 
--   **Iago de Souza Gomes** - [GitHub](https://github.com/IagoSet) - [LinkedIn](https://www.linkedin.com/in/iago-de-souza-47899b2a9/)
+-   **Iago de Souza Gomes** - [LinkedIn](https://www.linkedin.com/in/iago-de-souza-47899b2a9/)
